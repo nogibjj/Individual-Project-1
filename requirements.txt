@@ -12,10 +12,10 @@ fastapi==0.85.0
 uvicorn==0.18.3
 
 pandas 
-matplotlib.pyplot 
-ydata_profiling 
-datetime 
-sklearn.linear_model
+matplotlib
+ydata_profiling
+datetime
+sklearn
 
 
 
