@@ -15,15 +15,21 @@ data = pd.read_csv(example_csv)
 def test_descirbe():
     data = pd.read_csv(example_csv)
     result = Describe(data)
-    assert result.loc['mean', 'TotalConfirmed'] == 1638.599265
-    assert result.loc['mean', 'TotalDeaths'] == 5.782594
-    assert result.loc['std', 'TotalConfirmed'] == 1257.548628
-    assert result.loc['std', 'TotalDeaths'] == 7.762456
+    assert result.loc['mean', 'TotalConfirmed'] == 1638.5992645420104
+    assert result.loc['mean', 'TotalDeaths'] == 5.7825941609092935
+    assert result.loc['std', 'TotalConfirmed'] == 1257.5486280119524
+    assert result.loc['std', 'TotalDeaths'] == 7.7624562353408635
+    assert result.loc['mean', 'DistinctPatientsTested'] == 92.4781814129708
+    assert result.loc['mean', 'NewInTheLast14Days'] == 31.482259861823046
+    assert result.loc['std', 'DistinctPatientsTested'] == 149.57136794989026
+    assert result.loc['std', 'NewInTheLast14Days'] == 96.67810383876467
 
 def test_median():
     data = pd.read_csv(example_csv)
-    assert get_median(data['Shape_Leng']) == 60896.5746
-    assert get_median(data['Shape_Area']) == 230060526.252
+    assert get_median(data['TotalConfirmed']) == 1489.0
+    assert get_median(data['TotalDeaths']) == 2.0
+    assert get_median(data['DistinctPatientsTested']) == 39.0
+    assert get_median(data['NewInTheLast14Days']) == 2.000000
 
 def test_plot1():
     PlotHistOfTotalConfirmed(example_csv)

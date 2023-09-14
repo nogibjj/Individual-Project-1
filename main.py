@@ -74,7 +74,7 @@ def LROfTotalConfirmedVsDate(csv):
     plt.scatter(df2["date_index"].values.reshape(-1, 1), df2["TotalConfirmed"])
     plt.plot(df2["date_index"].values.reshape(-1, 1), Y_pred, color='red')
     plt.title("TotalConfirmed vs Date")
-    plt.xlabel("Date")
+    plt.xlabel("Date_Increasement")
     plt.ylabel("TotalConfirmed")
     plt.show()
 
