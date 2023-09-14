@@ -48,7 +48,7 @@ def PlotScatter(csv):
     #print(type(general_df["Date"][0]))
     df = general_df.groupby("DateInt").sum()
     df2 =df.reset_index()
-    plt.bar(df2["DateInt"], df2["TotalConfirmed"])
+    plt.scatter(df2["DateInt"], df2["TotalConfirmed"])
     plt.title("TotalConfirmed vs Date")
     plt.xlabel("Date")
     plt.ylabel("TotalConfirmed")
