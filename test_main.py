@@ -8,10 +8,6 @@ from main import (
     Summary,
 )
 import pandas as pd
-import matplotlib.pyplot as plt
-from ydata_profiling import ProfileReport
-from datetime import datetime
-from sklearn.linear_model import LinearRegression
 
 example_csv = "https://data.ca.gov/dataset/4a9a896a-e64e-48c2-bb35-5589f80e7c52/resource/5a3f496d-04be-4405-aea0-e83e26076efc/download/covid19dashboard.csv"
 data = pd.read_csv(example_csv)
