@@ -15,7 +15,7 @@ pandas
 matplotlib
 ydata_profiling
 datetime
-sklearn.linear_model
+sklearn
 
 
 
