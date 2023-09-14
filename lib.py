@@ -13,7 +13,7 @@ def get_median(df):
 def PlotHistOfTotalConfirmed(csv):
     pd.set_option("display.max_columns", None)
     general_df = pd.read_csv(csv)
-    plt.figure(figsize=(7.2, 4.32))
+    plt.figure(figsize=(5.184, 3.1104))
     plt.hist(general_df["TotalConfirmed"], bins=20, edgecolor="black")
     plt.title("TotalConfirmed Distribution")
     plt.xlabel("TotalConfirmed")
@@ -23,7 +23,7 @@ def PlotHistOfTotalConfirmed(csv):
 def PlotHistTotalConfirmedVsDate(csv):
     pd.set_option("display.max_columns", None)
     general_df = pd.read_csv(csv)
-    plt.figure(figsize=(7.2, 4.32))
+    plt.figure(figsize=(5.184, 3.1101))
     a = []
     for i in range(44870):
         a.append(datetime.strptime(general_df["Date"][i], '%Y-%m-%d').date())
@@ -40,7 +40,7 @@ def PlotHistTotalConfirmedVsDate(csv):
 def PlotScatter(csv):
     pd.set_option("display.max_columns", None)
     general_df = pd.read_csv(csv)
-    plt.figure(figsize=(7.2, 4.32))
+    plt.figure(figsize=(5.184, 3.1101))
     a = []
     for i in range(44870):
         a.append(datetime.strptime(general_df["Date"][i], '%Y-%m-%d').date())
@@ -57,7 +57,7 @@ def PlotScatter(csv):
 def LROfTotalConfirmedVsDate(csv):
     pd.set_option("display.max_columns", None)
     general_df = pd.read_csv(csv)
-    plt.figure(figsize=(7.2, 4.32))
+    plt.figure(figsize=(5.184, 3.1101))
     df = general_df.groupby("Date").sum()
     df2 =df.reset_index()
     x = []
