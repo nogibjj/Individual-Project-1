@@ -30,7 +30,6 @@ def PlotHistTotalConfirmedVsDate(csv):
     general_df["DateInt"] = a
     #print(type(general_df["Date"][0]))
     df = general_df.groupby("DateInt").sum()
-    print(df)
     df2 =df.reset_index()
     plt.bar(df2["DateInt"], df2["TotalConfirmed"])
     plt.title("TotalConfirmed vs Date")
@@ -48,7 +47,6 @@ def PlotScatter(csv):
     general_df["DateInt"] = a
     #print(type(general_df["Date"][0]))
     df = general_df.groupby("DateInt").sum()
-    print(df)
     df2 =df.reset_index()
     plt.bar(df2["DateInt"], df2["TotalConfirmed"])
     plt.title("TotalConfirmed vs Date")
