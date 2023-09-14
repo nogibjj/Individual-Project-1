@@ -1,4 +1,4 @@
-from main import (
+from lib import (
     Describe,
     get_median,
     PlotHistOfTotalConfirmed,
