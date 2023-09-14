@@ -25,7 +25,8 @@ def PlotHistTotalConfirmedVsDate(csv):
     general_df = pd.read_csv(csv)
     plt.figure(figsize=(10, 6))
     for i in range(44870):
-        general_df["Date"][i] = datetime.strptime(general_df["Date"][i], '%Y-%m-%d').date()
+        j = datetime.strptime(general_df["Date"][i], '%Y-%m-%d').date()
+        general_df["Date"][i] = j
     #print(type(general_df["Date"][0]))
     df = general_df.groupby("Date").sum()
     #print(df)
@@ -41,7 +42,8 @@ def PlotScatter(csv):
     general_df = pd.read_csv(csv)
     plt.figure(figsize=(10, 6))
     for i in range(44870):
-        general_df["Date"][i] = datetime.strptime(general_df["Date"][i], '%Y-%m-%d').date()
+        j = datetime.strptime(general_df["Date"][i], '%Y-%m-%d').date()
+        general_df["Date"][i] = j
     #print(type(general_df["Date"][0]))
     df = general_df.groupby("Date").sum()
     #print(df)
@@ -65,8 +67,10 @@ def LROfTotalConfirmedVsDate(csv):
         a = a + 1
     df2["date_index"] = x
     lr = LinearRegression()  # create object for the class
-    lr.fit(df2["date_index"].values.reshape(-1, 1), df2["TotalConfirmed"])  # perform linear regression
-    Y_pred = lr.predict(df2["date_index"].values.reshape(-1, 1))  # make predictions
+    # perform linear regression
+    lr.fit(df2["date_index"].values.reshape(-1, 1), df2["TotalConfirmed"]) 
+    # make predictions
+    Y_pred = lr.predict(df2["date_index"].values.reshape(-1, 1)) 
     plt.scatter(df2["date_index"].values.reshape(-1, 1), df2["TotalConfirmed"])
     plt.plot(df2["date_index"].values.reshape(-1, 1), Y_pred, color='red')
     plt.title("TotalConfirmed vs Date")
