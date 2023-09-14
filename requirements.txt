@@ -17,6 +17,7 @@ ydata_profiling
 datetime
 scikit-learn
 numpy
+nbval
 
 
 
