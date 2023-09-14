@@ -16,6 +16,7 @@ matplotlib
 ydata_profiling
 datetime
 sklearn
+numpy
 
 
 
