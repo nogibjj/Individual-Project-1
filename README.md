@@ -43,6 +43,7 @@ When I tried to do the liner regression, I met the third problem: both date type
 
 
 After fixing all of these, I got all pass.
+
 `test_lib.py` and `test_script.py`:
 
 <img width="653" alt="截屏2023-09-16 上午1 58 01" src="https://github.com/nogibjj/Individual-Project-1/assets/89813704/65e3467c-c17a-48f4-8256-f2edfebe8e91">
