@@ -37,7 +37,7 @@ When I tried to plot the distribution of `TotalConfirmed` by `Date`, after I gro
 <img width="552" alt="截屏2023-09-16 上午1 52 53" src="https://github.com/nogibjj/Individual-Project-1/assets/89813704/563d977d-2618-4620-95b3-2074bfb6e286">
 
 
-When I tried to do the liner regression, I met the third problem: both date type data and row index are not able to do liner regression. Therefore, first reset the Date index and then I added a new column into the dataframe as Date index, use that column and `TotalConfirmed` to do liner regression. Finally, I got waht I want.
+When I tried to do the liner regression, I met the third problem: both date type data and row index are not able to do liner regression. Therefore, I first reset the Date index and then I added a new column into the dataframe as Date index, use that column and `TotalConfirmed` to do liner regression. Finally, I got what I want.
 
 <img width="281" alt="截屏2023-09-16 上午1 54 59" src="https://github.com/nogibjj/Individual-Project-1/assets/89813704/bfbcedd3-05f3-4ec3-a928-e9b009abe436">
 
