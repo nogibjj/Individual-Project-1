@@ -77,7 +77,7 @@ The graph indicates a linear relation, do linear regression by `LROfTotalConfirm
 ## Summary statistics
 Describe:
 
-![Alt text](<截屏2023-08-29 下午8.16.08.png>)
+![Alt text](<截屏2023-09-16 下午12.11.41.png>)
 
 
 Median:
