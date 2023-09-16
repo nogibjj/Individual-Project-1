@@ -14,14 +14,14 @@ data = pd.read_csv(example_csv)
 def test_descirbe():
     data = pd.read_csv(example_csv)
     result = Describe(data)
-    assert result.loc['mean', 'TotalConfirmed'] == 1640.2458611481975
-    assert result.loc['mean', 'TotalDeaths'] == 5.785291499777481
-    assert result.loc['std', 'TotalConfirmed'] == 1258.190961170143
-    assert result.loc['std', 'TotalDeaths'] == 7.763615960765412
-    assert result.loc['mean', 'DistinctPatientsTested'] == 92.36203827325323
-    assert result.loc['mean', 'NewInTheLast14Days'] == 31.447797062750332
-    assert result.loc['std', 'DistinctPatientsTested'] == 149.49585064537303
-    assert result.loc['std', 'NewInTheLast14Days'] == 96.6095005292558
+    assert result.loc['mean', 'TotalConfirmed'] == 1641.0890050027792
+    assert result.loc['mean', 'TotalDeaths'] == 5.786637020566982
+    assert result.loc['std', 'TotalConfirmed'] == 1258.5312030849523
+    assert result.loc['std', 'TotalDeaths'] == 7.764194054606796
+    assert result.loc['mean', 'DistinctPatientsTested'] == 92.29983324068927
+    assert result.loc['mean', 'NewInTheLast14Days'] == 31.429616453585325
+    assert result.loc['std', 'DistinctPatientsTested'] == 149.4567183595291
+    assert result.loc['std', 'NewInTheLast14Days'] == 96.57484456990743
 
 def test_median():
     data = pd.read_csv(example_csv)
