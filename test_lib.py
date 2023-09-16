@@ -5,7 +5,6 @@ from lib import (
     PlotHistTotalConfirmedVsDate,
     PlotScatter,
     LROfTotalConfirmedVsDate,
-    Summary,
 )
 import pandas as pd
 
@@ -43,5 +42,3 @@ def test_plot3():
 def test_plot4():
     LROfTotalConfirmedVsDate(example_csv)
 
-def test_generate_summary_report():
-    Summary(example_csv)

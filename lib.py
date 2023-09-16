@@ -77,8 +77,3 @@ def LROfTotalConfirmedVsDate(csv):
     plt.xlabel("Date_Increasement")
     plt.ylabel("TotalConfirmed")
     plt.show()
-
-def Summary(csv):
-    general_df = pd.read_csv(csv)
-    profile = ProfileReport(general_df, title="Profiling Report")
-    profile.to_file("profile.html")
