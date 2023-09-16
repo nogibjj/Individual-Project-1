@@ -50,6 +50,9 @@ After fixing all of these, I got all pass.
 
 `nbval`:
 
+Add command `py.test --nbval-lax *.ipynb` under test in `Makefile`
+
+
 <img width="600" alt="截屏2023-09-16 上午1 59 19" src="https://github.com/nogibjj/Individual-Project-1/assets/89813704/38de4371-98c1-45e8-a98f-e9aad5bb4647">
 
 
