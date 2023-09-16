@@ -1,5 +1,5 @@
 # Haochong-Individual-Project-1 [![CI](https://github.com/nogibjj/Individual-Project-1/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Individual-Project-1/actions/workflows/cicd.yml)
-This is a repo template for course 706_Data_Engineering Individual Project 1. First of all, I find a new csv about covid, which have record of data like total confirmed for days begin from 2020-04-16 to 2022-02-13. Secondly, I define functions called `Describe` and `get_median` to return the descriptive statistics of the dataset. After that, I use the jupyter notebook to print the descriptive statistics and plot the histagrams of the distribution of the `TotalConfirmed` by count. Next, I plot the histagrams of the distribution of the `TotalConfirmed` by `Date` and simplify it into a scatter plot. Consequently, I noticed that they have linear relation so I did a linear regression. All codes above are first complished in jupyter notebook. After that, I transfered the code into the `lib.py` as self-define functions and I use assert in the `test_lib.py` to test my function definitions and result. Futhermore, I import my functions into both jupyter notebook and `script.py`, use `nbval` to test the jupyter notebook. In addition, I write `test_script.py` to test my `script.py`. Finally, I use Action to run `Makefile` and got a 100% pass. 
+This is a repo template for course 706_Data_Engineering Individual Project 1. First of all, I find a new csv about covid-19, which have record of datas like total confirmed for a time period. Secondly, I define functions called `Describe` and `get_median` to return the descriptive statistics of the dataset. After that, I use the jupyter notebook to print the descriptive statistics and plot the histagrams of the distribution of the `TotalConfirmed` by count. Next, I plot the histagrams of the distribution of the `TotalConfirmed` by `Date` and simplify it into a scatter plot. Consequently, I noticed that they have linear relation so I did a linear regression. All codes above are first complished in jupyter notebook. After that, I transfered the code into the `lib.py` as self-define functions and I use assert in the `test_lib.py` to test my function definitions and result. Futhermore, I import my functions into both jupyter notebook and `script.py`, use `nbval` to test the jupyter notebook. In addition, I write `test_script.py` to test my `script.py`. Finally, I use Action to run `Makefile` and got a 100% pass. 
 
 Important file:
 * `Individual Project 1.ipynb`
@@ -77,7 +77,7 @@ The graph indicates a linear relation, do linear regression by `LROfTotalConfirm
 ## Summary statistics
 Describe:
 
-<img width="807" alt="截屏2023-09-16 上午2 05 07" src="https://github.com/nogibjj/Individual-Project-1/assets/89813704/76ff59e6-3fc8-456e-8388-0ac22eb4f109">
+![Alt text](<截屏2023-08-29 下午8.16.08.png>)
 
 
 Median:
