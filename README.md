@@ -25,7 +25,7 @@ To generate descriptive statistics and visualization on datasets using `Pandas` 
 <img width="616" alt="截屏2023-09-16 上午1 56 51" src="https://github.com/nogibjj/Individual-Project-1/assets/89813704/f0cdb336-da4f-4fcd-acaa-235d6410aa16">
 
 
-4. Test code by using `make test`
+3. Test code by using `make test`
 
 In this project, I failed lots of times before I passed all of them. At the beginning, I tried to add a file with `.ipynb` directly in my repo. Nevertheless, it shown as "invalid notebook". After consulting TA, I understanded that we can't use jupyter notebook in this way. Since setting up the environment on github would be redundant, I created a jupyter notebook locally, git clone my repo to local and drag the notebook into my repo then update my repo. Finally, I got vaild notebook.
 
