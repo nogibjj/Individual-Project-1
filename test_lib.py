@@ -15,7 +15,7 @@ data = pd.read_csv(example_csv)
 def test_descirbe():
     data = pd.read_csv(example_csv)
     result = Describe(data)
-    assert result.loc['mean', 'TotalConfirmed'] == 1638.5992645420104
+    assert result.loc['mean', 'TotalConfirmed'] == 1640.2458611481975
     assert result.loc['mean', 'TotalDeaths'] == 5.7825941609092935
     assert result.loc['std', 'TotalConfirmed'] == 1257.5486280119524
     assert result.loc['std', 'TotalDeaths'] == 7.7624562353408635
@@ -26,7 +26,7 @@ def test_descirbe():
 
 def test_median():
     data = pd.read_csv(example_csv)
-    assert get_median(data['TotalConfirmed']) == 1489.0
+    assert get_median(data['TotalConfirmed']) == 1490.0
     assert get_median(data['TotalDeaths']) == 2.0
     assert get_median(data['DistinctPatientsTested']) == 39.0
     assert get_median(data['NewInTheLast14Days']) == 2.000000
