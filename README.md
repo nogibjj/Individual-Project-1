@@ -86,6 +86,8 @@ Median:
 
 ## Video
 
+https://youtu.be/0xStPS-gz8w
+
 
 
 
