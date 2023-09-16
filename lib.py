@@ -1,6 +1,5 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from ydata_profiling import ProfileReport
 from datetime import datetime
 from sklearn.linear_model import LinearRegression
 
@@ -13,7 +12,7 @@ def get_median(df):
 def PlotHistOfTotalConfirmed(csv):
     pd.set_option("display.max_columns", None)
     general_df = pd.read_csv(csv)
-    plt.figure(figsize=(7.2, 4.32))
+    plt.figure(figsize=(10, 6))
     plt.hist(general_df["TotalConfirmed"], bins=20, edgecolor="black")
     plt.title("TotalConfirmed Distribution")
     plt.xlabel("TotalConfirmed")
@@ -23,9 +22,9 @@ def PlotHistOfTotalConfirmed(csv):
 def PlotHistTotalConfirmedVsDate(csv):
     pd.set_option("display.max_columns", None)
     general_df = pd.read_csv(csv)
-    plt.figure(figsize=(7.2, 4.32))
+    plt.figure(figsize=(10, 6))
     a = []
-    for i in range(44870):
+    for i in range(len(general_df.index)):
         a.append(datetime.strptime(general_df["Date"][i], '%Y-%m-%d').date())
     general_df["DateInt"] = a
     #print(type(general_df["Date"][0]))
@@ -40,9 +39,9 @@ def PlotHistTotalConfirmedVsDate(csv):
 def PlotScatter(csv):
     pd.set_option("display.max_columns", None)
     general_df = pd.read_csv(csv)
-    plt.figure(figsize=(7.2, 4.32))
+    plt.figure(figsize=(10, 6))
     a = []
-    for i in range(44870):
+    for i in range(len(general_df.index)):
         a.append(datetime.strptime(general_df["Date"][i], '%Y-%m-%d').date())
     general_df["DateInt"] = a
     #print(type(general_df["Date"][0]))
@@ -57,12 +56,12 @@ def PlotScatter(csv):
 def LROfTotalConfirmedVsDate(csv):
     pd.set_option("display.max_columns", None)
     general_df = pd.read_csv(csv)
-    plt.figure(figsize=(7.2, 4.32))
+    plt.figure(figsize=(10, 6))
     df = general_df.groupby("Date").sum()
     df2 =df.reset_index()
     x = []
     a = 0
-    for i in range(1282):
+    for i in range(len(df2.index)):
         x.append(a)
         a = a + 1
     df2["date_index"] = x
